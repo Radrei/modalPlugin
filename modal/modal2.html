@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="modal2.css" />
+	<script src="jquery.js"></script>
+	<script src="modal2.js"></script>
+</head>
+<body>
+	<div id="main">
+		<h1>Choose your Modal</h1>
+		<a href="#" class="ttb">Top to Bottom</a><br />
+		<a href="#" class="btt">Bottom to Top</a><br />
+		<a href="#" class="ltr">Left to Right</a><br />
+		<a href="#" class="rtl">Right to Left</a><br />
+		<a href="#" class="fade">Fade In</a>
+	</div>
+	<!--Fade in Modal-->
+	<div id="popup" class="popup">
+		<p>This is the Fade In Popup!</p>
+		<a href='#' class='close'>close</a>
+	</div>
+	<div id="popupLTR" class="popup">
+		<p>This popup moves from left to right!</p>
+		<a href='#' class='close'>close</a>
+	</div>
+	<div id="popupRTL" class="popup">
+		<p>This popup moves from right to left!</p>
+		<a href='#' class='close'>close</a>
+	</div>
+	<div id="popupTTB" class="popup">
+		<p>This popup moves from top to bottom!</p>
+		<a href='#' class='close'>close</a>
+	</div>
+	<div id="popupBTT" class="popup">
+		<p>This popup moves from bottom to top!</p>
+		<a href='#' class='close'>close</a>
+	</div>
+	
+	<div id="mask"></div>
+	
+	<script>
+		jQuery(function ($) {
+			$('#popup').modal();
+			});
+	</script>
+</body>
+</html>
