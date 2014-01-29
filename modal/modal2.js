@@ -18,7 +18,11 @@
 				$("#popupRTL").animate({left: '450px'});
 			}
 			else if ($(this).hasClass('close')) {
-				$(".popup").fadeOut();
+				$("#popup").fadeOut();
+				$("#popupTTB").css("top", "-10%");
+				$("#popupBTT").css("bottom", "-10%");
+				$("#popupLTR").css("left", "-300px");
+				$("#popupRTL").css("left", "100%");
 				$("#mask").hide();
 			}
 		});
