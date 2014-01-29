@@ -35,7 +35,7 @@ a{
     height: 100%;
 }
 
-.popup{
+@mixin popup-styles{
 	position: absolute;
 	z-index: 9000;
 	background:rgba(255,255,255,0.8);
@@ -44,30 +44,30 @@ a{
 }
 
 #popup{
-	@extend .popup;
+	@include popup-styles;
 	top: 20%;
 	left: 40%;
 	display: none;
 }
 #popupltr{
-	@extend .popup;
+	@include popup-styles;
 	top: 150px;
 	left: -300px;
 }
 
 #popuprtl{
-	@extend .popup;
+	@include popup-styles;
 	top: 150px;
 	left: 100%;
 }
 
 #popupttb{
-	@extend .popup;
+	@include popup-styles;
 	top: -10%;
 	left: 40%;
 }
 #popupbtt{
-	@extend .popup;
+	@include popup-styles;
 	bottom: -10%;
 	left: 40%;
 }
