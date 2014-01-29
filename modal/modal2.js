@@ -24,15 +24,3 @@
 		});
 	};
 })(jQuery);
-/*
-$("#popup-fi").slideDown('slow');
-
-
-		
-		$('#mask').fadeIn(1000);
-		
-		$("#close").click(function(){
-			$("#popup-fi").hide();
-			$("#mask").hide();
-		});
-*/
