@@ -1,96 +1,70 @@
-body{
-	background-image: url('domobg.jpg');
-	background-position: top left;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
+body {
+  background-image: url("domobg.jpg");
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden; }
 
-#main{
-	background-color: rgba(255,255,255,0.9);
-	width: 300px;
-	margin: 20% auto 0 auto;
-	height: 200px;
-	padding: 50px;
-	border-radius: 10px;
-	text-align: center
-}
+#main {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 300px;
+  margin: 20% auto 0 auto;
+  height: 200px;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center; }
 
-a{
-	color: black;
-	font-weight: bold;
-	font-size: 20px;
-	font-family: sans-serif;
-	text-decoration: none;
-}
+a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none; }
 
-#mask{
-	background-color: rgba(0,0,0,0.6);
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	width: 100%;
-    height: 100%;
-}
+#mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%; }
 
-#popup{
-	position: absolute;
-	top: 20%;
-	left: 40%;
-	z-index: 9000;
-	background:rgba(255,255,255,0.8);
-    border-radius:14px;
-    padding:8px;
-	display: none;
-}
-#popupltr{
-	position: absolute;
-	top: 150px;
-	left: -300px;
-	z-index: 9000;
-	background:rgba(255,255,255,0.8);
-    border-radius:14px;
-    padding:8px;
-}
+.popup, #popup, #popupltr, #popuprtl, #popupttb, #popupbtt {
+  position: absolute;
+  z-index: 9000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  padding: 8px; }
 
-#popuprtl{
-	position: absolute;
-	top: 150px;
-	left: 100%;
-	z-index: 9000;
-	background:rgba(255,255,255,0.8);
-    border-radius:14px;
-    padding:8px;
-}
+#popup {
+  top: 20%;
+  left: 40%;
+  display: none; }
 
-#popupttb{
-	position: absolute;
-	top: -10%;
-	left: 40%;
-	z-index: 9000;
-	background:rgba(255,255,255,0.8);
-    border-radius:14px;
-    padding:8px;
-}
-#popupbtt{
-	position: absolute;
-	bottom: -10%;
-	left: 40%;
-	z-index: 9000;
-	background:rgba(255,255,255,0.8);
-    border-radius:14px;
-    padding:8px;
-}
+#popupltr {
+  top: 150px;
+  left: -300px; }
+
+#popuprtl {
+  top: 150px;
+  left: 100%; }
+
+#popupttb {
+  top: -10%;
+  left: 40%; }
+
+#popupbtt {
+  bottom: -10%;
+  left: 40%; }
 
 .close {
-    position:absolute;
-    background:url('closeBtn.png') 0 0 no-repeat;
-    width:42px;
-    height:42px;
-    display:block;
-    text-indent:-9999px;
-    top:-17px;
-    right:-17px;
-}
+  position: absolute;
+  background: url("closeBtn.png") 0 0 no-repeat;
+  width: 42px;
+  height: 42px;
+  display: block;
+  text-indent: -9999px;
+  top: -17px;
+  right: -17px; }
